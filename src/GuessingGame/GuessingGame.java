@@ -4,7 +4,7 @@ import java.util.Random;
 
 /** 
  * Class for GuessingGame.
- * @author :Pasut Kittiprapas.
+ * @author Pasut Kittiprapas.
  */
 public class GuessingGame {
 	/* properties of a guessing game */
@@ -26,6 +26,10 @@ public class GuessingGame {
 	public int getSecretNumber(){
 		return this.secret;
 	}
+	/**
+	 * count the number of guesses
+	 * @return the number of guesses
+	 */
 	public int getCount(){
 		return this.count;
 	}
