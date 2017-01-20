@@ -10,7 +10,6 @@ public class GameConsole {
 	 * @return ...
 	 */
 	public int play(GuessingGame game) {
-		int count = 1;
 		String title = "Guessing Game";
 		System.out.println(title);
 		System.out.println(game.getHint());
@@ -20,7 +19,6 @@ public class GameConsole {
 			int ans = sc.nextInt();
 			if (game.guess(ans) == false) {
 				System.out.println(game.getHint());
-				count++;
 			} else {
 				System.out.println(game.getHint());
 
@@ -28,7 +26,7 @@ public class GameConsole {
 
 			}
 		}
-		System.out.println("You used " + count + " guesses.");
+		System.out.println("You used " + game.count + " guesses.");
 		return game.getSecretNumber();
 
 	}

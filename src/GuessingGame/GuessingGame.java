@@ -11,6 +11,7 @@ public class GuessingGame {
 	private int upperBound;
 	private int secret;
 	private String hint;
+	public int count;
 	
 	/**
 	 * Initialize a new game.
@@ -20,6 +21,7 @@ public class GuessingGame {
 		this.upperBound = upperBound;
 		this.secret = getRandomNumber(upperBound);
 		this.hint = "I'm thinking of a number between 1 and "+ upperBound;
+		this.count = 0;
 	}
 	public int getSecretNumber(){
 		return this.secret;
@@ -37,6 +39,7 @@ public class GuessingGame {
 	}
 
 	public boolean guess(int number) {
+		this.count++;
 		if (number == this.secret) {
 			this.hint = "Correct. The secret is " + number;
 			return true;
