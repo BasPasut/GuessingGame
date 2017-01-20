@@ -4,7 +4,11 @@ import java.util.Scanner;
 
 public class GameConsole {
 	static Scanner sc = new Scanner(System.in);
-
+	/**
+	 * The play method plays a game using input from a user.
+	 * @param ...
+	 * @return ...
+	 */
 	public int play(GuessingGame game) {
 		int count = 1;
 		String title = "Guessing Game";
