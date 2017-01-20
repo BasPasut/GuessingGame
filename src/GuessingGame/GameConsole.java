@@ -26,7 +26,7 @@ public class GameConsole {
 
 			}
 		}
-		System.out.println("You used " + game.count + " guesses.");
+		System.out.println("You used " + game.getCount() + " guesses.");
 		return game.getSecretNumber();
 
 	}

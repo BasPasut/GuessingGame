@@ -3,8 +3,8 @@ package GuessingGame;
 import java.util.Random;
 
 /** 
- * Game of guessing a secret number.-- write a description here
- * @author Your Name               -- your name, no parenthesis.
+ * Class for GuessingGame.
+ * @author :Pasut Kittiprapas.
  */
 public class GuessingGame {
 	/* properties of a guessing game */
@@ -26,6 +26,9 @@ public class GuessingGame {
 	public int getSecretNumber(){
 		return this.secret;
 	}
+	public int getCount(){
+		return this.count;
+	}
 	
 	/** 
 	 * Create a random number between 1 and limit.
@@ -41,7 +44,7 @@ public class GuessingGame {
 	public boolean guess(int number) {
 		this.count++;
 		if (number == this.secret) {
-			this.hint = "Correct. The secret is " + number;
+			this.hint = "Correct. The secret is " + number + ".";
 			return true;
 		} else if (number > this.secret) {
 			this.hint = "Sorry, your guess is too large.";
