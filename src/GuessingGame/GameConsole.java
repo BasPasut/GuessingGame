@@ -6,7 +6,7 @@ public class GameConsole {
 	static Scanner sc = new Scanner(System.in);
 
 	public int play(GuessingGame game) {
-		int count = 0;
+		int count = 1;
 		String title = "Guessing Game";
 		System.out.println(title);
 		System.out.println(game.getHint());
@@ -24,7 +24,7 @@ public class GameConsole {
 
 			}
 		}
-		System.out.println("Correct. You used " + count + " guesses.");
+		System.out.println("You used " + count + " guesses.");
 		return game.getSecretNumber();
 
 	}
