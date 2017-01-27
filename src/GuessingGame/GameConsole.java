@@ -1,4 +1,4 @@
-package GuessingGame;
+package guessinggame;
 
 import java.util.Scanner;
 
@@ -21,11 +21,14 @@ public class GameConsole {
 			int ans = sc.nextInt();
 			if (game.guess(ans) == false) {
 				System.out.println(game.getHint());
-			} else {
+			} 
+			
+			else {
 				System.out.println(game.getHint());
 				running = false;
 			}
 		}
+		
 		System.out.println("You used " + game.getCount() + " guesses.");
 		return game.getSecretNumber();
 
