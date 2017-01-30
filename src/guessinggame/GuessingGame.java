@@ -10,7 +10,7 @@ import java.util.Random;
 public class GuessingGame {
 	/* properties of a guessing game */
 	private int upperBound;
-	private int secret;
+	public int secret;
 	private String hint;
 	public int count;
 
@@ -25,14 +25,6 @@ public class GuessingGame {
 		this.secret = getRandomNumber(upperBound);
 		this.hint = "I'm thinking of a number between 1 and " + upperBound;
 		this.count = 0;
-	}
-
-	/**
-	 * Get the secret number from the random.
-	 * @return secret number from the random.
-	 */
-	public int getSecretNumber() {
-		return this.secret;
 	}
 
 	/**
@@ -65,7 +57,7 @@ public class GuessingGame {
 	public boolean guess(int number) {
 		this.count++;
 		if (number == this.secret) {
-			this.hint = "Correct. The secret is " + number + ".";
+			this.hint = "The secret number is " + this.secret + ".";
 			return true;
 		} else if (number > this.secret) {
 			this.hint = "Sorry, your guess is too large.";

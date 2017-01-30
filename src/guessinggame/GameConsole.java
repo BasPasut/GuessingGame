@@ -30,7 +30,7 @@ public class GameConsole {
 		}
 		
 		System.out.println("You used " + game.getCount() + " guesses.");
-		return game.getSecretNumber();
-
+		return game.secret;
+		
 	}
 }
