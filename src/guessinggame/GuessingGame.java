@@ -9,7 +9,7 @@ import java.util.Random;
  */
 public class GuessingGame {
 	/* properties of a guessing game */
-	private int upperBound;
+	public int upperBound;
 	public int secret;
 	private String hint;
 	public int count;
@@ -60,10 +60,10 @@ public class GuessingGame {
 			this.hint = "The secret number is " + this.secret + ".";
 			return true;
 		} else if (number > this.secret) {
-			this.hint = "Sorry, your guess is too large.";
+			this.hint = "Sorry, your guess is too large. Try again.";
 			return false;
 		} else {
-			this.hint = "Sorry, your guess is too small.";
+			this.hint = "Sorry, your guess is too small. Try again.";
 			return false;
 		}
 	}
