@@ -1,5 +1,5 @@
 #GuessingGame
-This project have 2 packages : 
+This project have 2 packages :<br /> 
 1.guessinggame<br />
 have 3 classes:<br />
 -GameConsole //use the GuessingGame class and make it work!!<br />
